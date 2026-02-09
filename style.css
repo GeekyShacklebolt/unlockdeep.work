@@ -240,8 +240,9 @@ h1, h2, h3 {
 }
 
 .wf-arrow {
-  color: #d6d3d1;
-  font-size: 0.8rem;
+  color: #b45309;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
 .wf-hint {
@@ -358,17 +359,16 @@ h1, h2, h3 {
 }
 
 .faq-item {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 10px;
-  overflow: hidden;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .faq-item summary {
-  padding: 0.75rem 1rem;
+  padding: 0.7rem 0;
   font-size: 0.88rem;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
   cursor: pointer;
   list-style: none;
   display: flex;
@@ -376,36 +376,101 @@ h1, h2, h3 {
   align-items: center;
 }
 
+.faq-item summary:hover {
+  color: rgba(255, 255, 255, 0.95);
+}
+
 .faq-item summary::-webkit-details-marker {
   display: none;
 }
 
 .faq-item summary::after {
-  content: '+';
-  font-size: 1.2rem;
+  content: '▸';
+  font-size: 0.75rem;
   color: #d97706;
-  font-weight: 400;
   flex-shrink: 0;
-  margin-left: 1rem;
+  margin-left: 0.75rem;
+  transition: transform 0.2s;
 }
 
 .faq-item[open] summary::after {
-  content: '−';
+  transform: rotate(90deg);
 }
 
 .faq-item p {
-  padding: 0 1rem 0.85rem;
+  padding: 0 0 0.7rem;
   font-size: 0.82rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.4);
   line-height: 1.6;
+}
+
+.desktop-cta {
+  margin-top: 2rem;
+}
+
+.desktop-cta .what-app-tagline {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1c1917;
+  margin-bottom: 1rem;
+}
+
+.desktop-cta .waitlist-form {
+  margin: 0 auto;
+}
+
+.desktop-cta .waitlist-form input[type="email"] {
+  background: #fff;
+  border-color: #e7e5e4;
+  color: #1c1917;
+}
+
+.desktop-cta .waitlist-form input[type="email"]::placeholder {
+  color: #a8a29e;
+}
+
+.desktop-cta .waitlist-form input[type="email"]:focus {
+  border-color: #d97706;
+}
+
+/* ===== Bottom CTA ===== */
+.bottom-cta {
+  display: none;
+  padding: 2.5rem 0 1rem;
+  background: #fafaf9;
+  text-align: center;
+}
+
+.bottom-cta-text {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1c1917;
+  margin-bottom: 1.25rem;
+}
+
+.bottom-cta .waitlist-form {
+  margin: 0 auto;
+}
+
+.bottom-cta .waitlist-form input[type="email"] {
+  background: #fff;
+  border-color: #e7e5e4;
+  color: #1c1917;
+}
+
+.bottom-cta .waitlist-form input[type="email"]::placeholder {
+  color: #a8a29e;
+}
+
+.bottom-cta .waitlist-form input[type="email"]:focus {
+  border-color: #d97706;
 }
 
 /* ===== Footer ===== */
 .footer {
-  padding: 2rem 0;
+  padding: 1rem 0 1.5rem;
   text-align: center;
   background: #fafaf9;
-  border-top: 1px solid #e7e5e4;
 }
 
 .footer-links {
@@ -501,5 +566,13 @@ h1, h2, h3 {
 
   .faq-list {
     grid-template-columns: 1fr;
+  }
+
+  .desktop-cta {
+    display: none;
+  }
+
+  .bottom-cta {
+    display: block;
   }
 }
