@@ -336,6 +336,70 @@ h1, h2, h3 {
   margin-bottom: 1rem;
 }
 
+/* ===== FAQ ===== */
+.faq-section {
+  padding: 5rem 0;
+  background: #1c1917;
+}
+
+.faq-section .section-label {
+  color: #d97706;
+}
+
+.faq-section .section-title {
+  color: #fff;
+}
+
+.faq-list {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.faq-item summary {
+  padding: 0.75rem 1rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: '+';
+  font-size: 1.2rem;
+  color: #d97706;
+  font-weight: 400;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.faq-item[open] summary::after {
+  content: '−';
+}
+
+.faq-item p {
+  padding: 0 1rem 0.85rem;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.6;
+}
+
 /* ===== Footer ===== */
 .footer {
   padding: 2rem 0;
@@ -430,7 +494,12 @@ h1, h2, h3 {
 
   .problem-section,
   .what-ritual-section,
-  .what-app-section {
+  .what-app-section,
+  .faq-section {
     padding: 3.5rem 0;
+  }
+
+  .faq-list {
+    grid-template-columns: 1fr;
   }
 }
