@@ -136,6 +136,61 @@ h1, h2, h3 {
   box-shadow: 0 6px 28px rgba(217, 119, 6, 0.4);
 }
 
+/* ===== Waitlist Form ===== */
+.waitlist-form {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 380px;
+  margin-left: auto;
+}
+
+.waitlist-form input[type="email"] {
+  flex: 1;
+  min-width: 0;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.9rem;
+  font-family: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.waitlist-form input[type="email"]::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.waitlist-form input[type="email"]:focus {
+  border-color: #d97706;
+}
+
+.waitlist-form .cta-button {
+  padding: 0.65rem 1.5rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.what-app-section .waitlist-form {
+  margin: 0 auto;
+}
+
+.what-app-section .waitlist-form input[type="email"] {
+  background: #fff;
+  border-color: #e7e5e4;
+  color: #1c1917;
+}
+
+.what-app-section .waitlist-form input[type="email"]::placeholder {
+  color: #a8a29e;
+}
+
+.what-app-section .waitlist-form input[type="email"]:focus {
+  border-color: #d97706;
+}
+
 /* ===== Problem — Waterfall ===== */
 .problem-section {
   padding: 5rem 0;
@@ -233,44 +288,52 @@ h1, h2, h3 {
   border-radius: 12px;
 }
 
-/* ===== Insight ===== */
-.insight-section {
+/* ===== What is a Ritual? ===== */
+.what-ritual-section {
   padding: 5rem 0;
   background: #1c1917;
-  text-align: center;
 }
 
-.insight-line {
-  font-size: 2.25rem;
-  font-weight: 800;
+.what-ritual-section .section-label {
+  color: #d97706;
+}
+
+.what-ritual-section .section-title {
   color: #fff;
-  line-height: 1.2;
+  margin-bottom: 2rem;
 }
 
-.insight-line em {
+.what-ritual-text {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.what-ritual-text strong {
   color: #fbbf24;
-  font-style: normal;
 }
 
-/* ===== Solution ===== */
-.solution-section {
+/* ===== What is Ritual the app? ===== */
+.what-app-section {
   padding: 5rem 0;
   background: #fafaf9;
   text-align: center;
 }
 
-.solution-text {
+.what-app-text {
   font-size: 1.1rem;
   color: #57534e;
   line-height: 1.65;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
-.solution-tagline {
+.what-app-tagline {
   font-size: 1.15rem;
   font-weight: 700;
   color: #1c1917;
-  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 /* ===== Footer ===== */
@@ -338,6 +401,11 @@ h1, h2, h3 {
     font-size: 1.1rem;
   }
 
+  .waitlist-form {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
   .section-title {
     font-size: 1.6rem;
   }
@@ -361,8 +429,8 @@ h1, h2, h3 {
   }
 
   .problem-section,
-  .insight-section,
-  .solution-section {
+  .what-ritual-section,
+  .what-app-section {
     padding: 3.5rem 0;
   }
 }
