@@ -123,7 +123,7 @@ h1, h2, h3 {
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center 75%;
+  background-position: center 90%;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
