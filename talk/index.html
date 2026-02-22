@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SDMS67HGEH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SDMS67HGEH');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Deep Work Consultation - Ritual</title>
+  <meta name="description" content="You're not lazy. You just haven't built the system yet. Book a free call and let's build a deep work habit that actually sticks.">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+  <link rel="icon" href="/icon-512.png" type="image/png" sizes="512x512">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="canonical" href="https://unlockdeep.work/talk/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://unlockdeep.work/talk/">
+  <meta property="og:title" content="Free Deep Work Consultation - Ritual">
+  <meta property="og:description" content="You're not lazy. You just haven't built the system yet. Book a free call and let's build a deep work habit that actually sticks.">
+  <meta property="og:image" content="https://unlockdeep.work/og-image.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free Deep Work Consultation - Ritual">
+  <meta name="twitter:description" content="You're not lazy. You just haven't built the system yet. Book a free call and let's build a deep work habit that actually sticks.">
+  <meta name="twitter:image" content="https://unlockdeep.work/og-image.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet"></noscript>
+
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .talk-page {
+      min-height: 100vh;
+      background: #fafaf9;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+
+    .talk-hero {
+      background: #1c1917;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .talk-hero .section-label {
+      color: #d97706;
+    }
+
+    .talk-hero-title {
+      font-size: 2.4rem;
+      color: #fff;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .talk-hero-sub {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.55);
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.65;
+    }
+
+    .talk-body {
+      flex: 1;
+      padding: 4rem 2rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .talk-layout {
+      max-width: 860px;
+      width: 100%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 4rem;
+      align-items: start;
+      box-sizing: border-box;
+    }
+
+    .talk-sidebar {
+      text-align: center;
+    }
+
+    .talk-photo-wrap {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid #e7e5e4;
+      margin: 0 auto 1.25rem;
+    }
+
+    .talk-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 10%;
+      transform: scale(1.4);
+    }
+
+    .talk-name {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #1c1917;
+      margin-bottom: 0.25rem;
+    }
+
+    .talk-role {
+      font-size: 0.85rem;
+      color: #a8a29e;
+      margin-bottom: 1.5rem;
+    }
+
+    .talk-why {
+      text-align: left;
+      padding: 1.25rem;
+      background: #1c1917;
+      border-radius: 10px;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .talk-why-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #d97706;
+      margin-bottom: 0.75rem;
+    }
+
+    .talk-why-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .talk-why-list li {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.6);
+      line-height: 1.55;
+      padding: 0.35rem 0;
+      padding-left: 1.25rem;
+      position: relative;
+    }
+
+    .talk-why-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.65rem;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #d97706;
+    }
+
+    .talk-form-section h2 {
+      font-size: 1.5rem;
+      color: #1c1917;
+      margin-bottom: 0.5rem;
+    }
+
+    .talk-form-intro {
+      font-size: 0.95rem;
+      color: #78716c;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .talk-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .form-group label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #44403c;
+      letter-spacing: 0.02em;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      padding: 0.7rem 0.85rem;
+      font-size: 0.92rem;
+      font-family: inherit;
+      border: 1px solid #e7e5e4;
+      border-radius: 8px;
+      background: #fff;
+      color: #1c1917;
+      outline: none;
+      transition: border-color 0.2s;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: #d97706;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .form-group select {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2378716c' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.85rem center;
+      padding-right: 2.5rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .talk-form .cta-button {
+      width: 100%;
+      padding: 0.65rem 1.5rem;
+      font-size: 0.9rem;
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
+
+    .talk-free-note {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #a8a29e;
+      margin-top: 0.5rem;
+    }
+
+    .talk-nav {
+      margin-bottom: 2rem;
+    }
+
+    .talk-back {
+      font-size: 0.82rem;
+      color: rgba(255, 255, 255, 0.35);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .talk-back:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .talk-footer {
+      padding: 1.5rem 2rem;
+      text-align: center;
+      background: #fafaf9;
+      border-top: 1px solid #e7e5e4;
+    }
+
+    .talk-footer a {
+      font-size: 0.85rem;
+      color: #78716c;
+      text-decoration: none;
+    }
+
+    .talk-footer a:hover {
+      color: #b45309;
+    }
+
+    @media (max-width: 650px) {
+      .talk-hero {
+        padding: 3rem 1.5rem;
+      }
+
+      .talk-hero-title {
+        font-size: 1.8rem;
+      }
+
+      .talk-hero-sub {
+        font-size: 1rem;
+      }
+
+      .talk-body {
+        padding: 2rem 1.25rem;
+      }
+
+      .talk-form-section,
+      .talk-why {
+        max-width: 100%;
+      }
+
+      .talk-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .talk-sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .talk-photo-wrap {
+        width: 140px;
+        height: 140px;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="talk-page">
+
+    <!-- Hero -->
+    <section class="talk-hero">
+      <nav class="talk-nav">
+        <a href="/" class="talk-back">&larr; unlockdeep.work</a>
+      </nav>
+      <div class="section-label">Talk to a human</div>
+      <h1 class="talk-hero-title">You're not lazy. You just haven't built the system yet.</h1>
+      <p class="talk-hero-sub">I built Ritual to solve this exact problem. Book a free call and let's build a deep work habit that actually sticks.</p>
+    </section>
+
+    <!-- Body -->
+    <div class="talk-body">
+      <div class="talk-layout">
+
+        <!-- Sidebar -->
+        <aside class="talk-sidebar">
+          <div class="talk-photo-wrap">
+            <img src="../shiva.jpg" alt="Shiva" class="talk-photo">
+          </div>
+          <div class="talk-name">Shiva</div>
+          <div class="talk-role">Built Ritual because I needed it myself</div>
+
+          <div class="talk-why">
+            <div class="talk-why-title">What to expect</div>
+            <ul class="talk-why-list">
+              <li>30 minutes. Longer only if you want to keep going.</li>
+              <li>We find what's breaking your consistency and fix it</li>
+              <li>Completely free, no strings attached</li>
+
+            </ul>
+          </div>
+        </aside>
+
+        <!-- Form -->
+        <div class="talk-form-section">
+          <h2>Book your free call</h2>
+          <p class="talk-form-intro">Tell me a bit about yourself and what gets in the way of your work. I'll get back to you within 24 hours to find a time.</p>
+
+          <form class="talk-form" action="https://formspree.io/f/xlgwpzzy" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="struggle">What's your biggest struggle with getting started?</label>
+              <select id="struggle" name="struggle" required>
+                <option value="" disabled selected>Select one</option>
+                <option value="cant-start">I can't start working even when I know I should</option>
+                <option value="distraction">I get distracted within minutes of starting</option>
+                <option value="consistency">I start fine but can't stay consistent over days</option>
+                <option value="motivation">I only work when I feel motivated</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="context">Tell me more (optional)</label>
+              <textarea id="context" name="context" placeholder="What does a typical day look like when you're struggling? What have you tried before?"></textarea>
+            </div>
+
+            <button type="submit" class="cta-button">Request a free call</button>
+            <p class="talk-free-note">100% free. No strings attached. I genuinely want to help.</p>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="talk-footer">
+      <a href="/">unlockdeep.work</a>
+    </div>
+
+  </div>
+
+</body>
+</html>

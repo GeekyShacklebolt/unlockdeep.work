@@ -117,7 +117,7 @@ h1, h2, h3 {
 
 .cta-button {
   display: inline-block;
-  padding: 0.9rem 2.5rem;
+  padding: 0.65rem 1.5rem;
   font-size: 1rem;
   font-family: inherit;
   font-weight: 600;
@@ -335,6 +335,34 @@ h1, h2, h3 {
   color: #1c1917;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
+}
+
+/* ===== Talk CTA ===== */
+.talk-cta-section {
+  padding: 4rem 0;
+  background: #292524;
+  text-align: center;
+}
+
+.talk-cta-section .section-label {
+  color: #d97706;
+}
+
+.talk-cta-section .section-title {
+  color: #fff;
+}
+
+.talk-cta-text {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.65;
+  margin-bottom: 2rem;
+}
+
+.talk-cta-section .waitlist-form {
+  justify-content: center;
+  max-width: none;
+  margin: 0;
 }
 
 /* ===== FAQ ===== */
@@ -575,4 +603,5 @@ h1, h2, h3 {
   .bottom-cta {
     display: block;
   }
+
 }
