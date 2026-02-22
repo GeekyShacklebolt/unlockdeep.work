@@ -123,8 +123,9 @@ h1, h2, h3 {
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center 30%;
+  background-position: center 50%;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .hero-overlay {
