@@ -55,38 +55,76 @@ h1, h2, h3 {
   margin-bottom: 1rem;
 }
 
-/* ===== Top Bar ===== */
-.top-bar {
-  background: #1c1917;
-  color: rgba(255, 255, 255, 0.5);
-  text-align: center;
-  padding: 0.5rem 1rem;
-  font-size: 0.78rem;
+/* ===== Navbar ===== */
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 1.5rem;
+  background: rgba(28, 25, 23, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.site-nav-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.site-nav-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+}
+
+.site-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.site-nav-links a {
+  font-size: 0.85rem;
   font-weight: 500;
-  letter-spacing: 0.03em;
-  position: relative;
-  z-index: 10;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.site-nav-links a:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.site-nav-links a.active {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /* ===== Hero ===== */
 .hero {
-  min-height: 100vh;
+  height: 70vh;
+  max-height: 70vh;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   background: #1c1917;
   position: relative;
   overflow: hidden;
-  padding: 4rem;
+  padding: 2rem 4rem;
 }
 
 .hero-bg {
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .hero-overlay {
@@ -518,14 +556,13 @@ h1, h2, h3 {
 /* ===== Responsive ===== */
 @media (max-width: 650px) {
   .hero {
-    min-height: 70vh;
+    height: 70vh;
     padding: 2.5rem 1.5rem;
     align-items: flex-end;
     justify-content: center;
   }
 
   .hero-bg {
-    background-attachment: scroll;
     background-position: 70% center;
   }
 

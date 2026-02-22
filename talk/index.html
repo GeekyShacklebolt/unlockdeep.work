@@ -42,7 +42,7 @@
   <link rel="stylesheet" href="/style.css">
   <style>
     .talk-page {
-      min-height: 100vh;
+      min-height: 70vh;
       background: #fafaf9;
       display: flex;
       flex-direction: column;
@@ -50,9 +50,37 @@
     }
 
     .talk-hero {
-      background: #1c1917;
-      padding: 4rem 2rem;
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 5.5rem 2rem 4rem;
       text-align: center;
+      position: relative;
+      overflow: hidden;
+      background: #1c1917;
+    }
+
+    .talk-hero-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .talk-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      pointer-events: none;
+    }
+
+    .talk-hero-content {
+      position: relative;
+      z-index: 1;
     }
 
     .talk-hero .section-label {
@@ -64,14 +92,16 @@
       color: #fff;
       margin-bottom: 1rem;
       line-height: 1.2;
+      text-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
     }
 
     .talk-hero-sub {
       font-size: 1.1rem;
-      color: rgba(255, 255, 255, 0.55);
+      color: rgba(255, 255, 255, 0.7);
       max-width: 520px;
       margin: 0 auto;
       line-height: 1.65;
+      text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
     }
 
     .talk-body {
@@ -258,20 +288,6 @@
       margin-top: 0.5rem;
     }
 
-    .talk-nav {
-      margin-bottom: 2rem;
-    }
-
-    .talk-back {
-      font-size: 0.82rem;
-      color: rgba(255, 255, 255, 0.35);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .talk-back:hover {
-      color: rgba(255, 255, 255, 0.8);
-    }
 
     .talk-footer {
       padding: 1.5rem 2rem;
@@ -292,7 +308,12 @@
 
     @media (max-width: 650px) {
       .talk-hero {
-        padding: 3rem 1.5rem;
+        min-height: 70vh;
+        padding: 5rem 1.5rem 3rem;
+      }
+
+      .talk-hero-bg {
+        background-attachment: scroll;
       }
 
       .talk-hero-title {
@@ -338,14 +359,26 @@
 
   <div class="talk-page">
 
+    <!-- Navbar -->
+    <nav class="site-nav">
+      <a href="/" class="site-nav-brand">
+        <img src="/icon-192.png" alt="Ritual" class="site-nav-icon">
+      </a>
+      <div class="site-nav-links">
+        <a href="/">Home</a>
+        <a href="/talk/" class="active">Let's talk</a>
+      </div>
+    </nav>
+
     <!-- Hero -->
     <section class="talk-hero">
-      <nav class="talk-nav">
-        <a href="/" class="talk-back">&larr; unlockdeep.work</a>
-      </nav>
-      <div class="section-label">Talk to a human</div>
-      <h1 class="talk-hero-title">You're not lazy. You just haven't built the system yet.</h1>
-      <p class="talk-hero-sub">I built Ritual to solve this exact problem. Book a free call and let's build a deep work habit that actually sticks.</p>
+      <div class="talk-hero-bg" style="background-image: url('talk-page-hero.webp');"></div>
+      <div class="talk-hero-overlay"></div>
+      <div class="talk-hero-content">
+        <div class="section-label">Talk to a human</div>
+        <h1 class="talk-hero-title">You're not lazy.<br>You just haven't built the system yet.</h1>
+        <p class="talk-hero-sub">I built Ritual to solve this exact problem. Book a free call and let's break down what can help you out.</p>
+      </div>
     </section>
 
     <!-- Body -->
@@ -416,10 +449,15 @@
 
     <!-- Footer -->
     <div class="talk-footer">
-      <a href="/">unlockdeep.work</a>
+      <a href="/">&larr; unlockdeep.work</a>
     </div>
 
   </div>
 
+<script>
+  window.addEventListener('pageshow', function() {
+    document.querySelector('.talk-form').reset();
+  });
+</script>
 </body>
 </html>
